@@ -1,0 +1,72 @@
+<!-- 
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reporte de Tareas</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    
+</head>
+<body>
+    <h1>Reporte de Tareas Pasadas de su Estimado y En Progreso</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Empleado</th>
+                    <th>Tarea</th>
+                    <th>Fecha Inicio</th>
+                    <th>Estimado (días)</th>
+                    <th>Proyecto</th>
+                    <th>Días Pasados</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="tarea : ${tareas}">
+                    <td th:text="${tarea.nombreEmpleado}"></td>
+                    <td th:text="${tarea.descripcion}"></td>
+                    <td th:text="${#dates.format(tarea.fechaInicio, 'dd/MM/yyyy')}"></td>
+                    <td th:text="${tarea.estimado}"></td>
+                    <td th:text="${tarea.proyecto}"></td>
+                    <td th:text="${tarea.diasPasados}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reporte de Tareas</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>Reporte de Tareas Pasadas de su Estimado y En Progreso</h1>
+    <div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Empleado</th>
+                    <th>Tarea</th>
+                    <th>Fecha Inicio</th>
+                    <th>Estimado (días)</th>
+                    <th>Proyecto</th>
+                    <th>Días Pasados</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="tarea : ${tareas}">
+                    <td th:text="${tarea.nombreEmpleado} + ' ' + ${tarea.apellidoEmpleado}"></td>
+                    <td th:text="${tarea.descripcion}"></td>
+                    <td th:text="${#dates.format(tarea.fechaInicio, 'dd/MM/yyyy')}"></td>
+                    <td th:text="${tarea.estimado}"></td>
+                    <td th:text="${tarea.proyecto}"></td>
+                    <td th:text="${tarea.diasPasados}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
