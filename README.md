@@ -1,5 +1,6 @@
 ## Informe del Proyecto: Integración de React con Spring Boot
-# Descripción General
+**Descripción General**
+
 Este proyecto integra una aplicación frontend construida en React con un backend desarrollado en Spring Boot. El objetivo principal de esta integración es generar y mostrar un reporte de tareas que han excedido su tiempo estimado y están en progreso. Este informe detalla el funcionamiento del proyecto, enfocado en React, y destaca los beneficios de usar React para construir aplicaciones web modernas.
 
 **1. Estructura del Proyecto**
