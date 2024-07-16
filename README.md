@@ -139,6 +139,14 @@ Copiar código
 ```
 npm start
 ```
+
+# Beneficios de la Solución:
+
+- **Escalabilidad**: La arquitectura modular de React y la robustez de Spring Boot permiten escalar la aplicación con facilidad.
+- **Desempeño Mejorado**: La utilización del DOM virtual de React y la eficiencia de Spring Boot garantizan un desempeño óptimo de la aplicación.
+- **Mantenimiento Simplificado**: La separación clara entre frontend y backend, junto con la reutilización de componentes en React, simplifica el mantenimiento y la actualización de la aplicación.
+- **Experiencia de Usuario Mejorada**: La capacidad de React para crear interfaces de usuario dinámicas y responsivas mejora significativamente la experiencia del usuario final.
+
 ## Conclusión
 
 La integración de React con Spring Boot ha demostrado ser una solución efectiva y moderna para construir aplicaciones web robustas y escalables. En este proyecto, hemos desarrollado una aplicación completa que permite generar y visualizar un reporte de tareas atrasadas, utilizando la potencia de React para el frontend y la flexibilidad de Spring Boot para el backend. 
@@ -160,9 +168,4 @@ La integración de React con Spring Boot ha demostrado ser una solución efectiv
 5. **Comunicación Fluida**:
    - La configuración de un proxy en React permite una comunicación fluida y sin problemas con el backend de Spring Boot, facilitando el desarrollo y las pruebas locales.
 
-# Beneficios de la Solución:
 
-- **Escalabilidad**: La arquitectura modular de React y la robustez de Spring Boot permiten escalar la aplicación con facilidad.
-- **Desempeño Mejorado**: La utilización del DOM virtual de React y la eficiencia de Spring Boot garantizan un desempeño óptimo de la aplicación.
-- **Mantenimiento Simplificado**: La separación clara entre frontend y backend, junto con la reutilización de componentes en React, simplifica el mantenimiento y la actualización de la aplicación.
-- **Experiencia de Usuario Mejorada**: La capacidad de React para crear interfaces de usuario dinámicas y responsivas mejora significativamente la experiencia del usuario final.
